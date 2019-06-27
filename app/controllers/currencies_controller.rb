@@ -17,11 +17,11 @@ class CurrenciesController < ApplicationController
       value: currency.calculate_value(amount)
     }
   end
-
+ 
 private 
 
 def currency
     @currency ||= Currency.find(params[:id])
-  end
+end
 
 end
